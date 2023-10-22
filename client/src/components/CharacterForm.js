@@ -1,13 +1,10 @@
 import React from "react";
 
-const CharacterForm = ({ prompt, userAnswer, onUserAnswerChange, onSubmit }) => {
+const CharacterForm = (props) => {
     return (
         <form onSubmit={onSubmit}>
             <label>
-                <p>{prompt}</p>
-            </label>
-            <label>
-                Your Answer:
+                Character Name:
                 <input
                     type="text"
                     value={userAnswer}
