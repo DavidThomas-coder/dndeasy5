@@ -8,7 +8,7 @@
 exports.up = async (knex) => {
     return knex.schema.alterTable("characters", (table) => {
         table.string("class").notNullable()
-    }
+    })
 }
 
 /**
@@ -17,5 +17,5 @@ exports.up = async (knex) => {
 exports.down = (knex) => {
     return knex.schema.alterTable("characters", (table) => {
         table.dropColumn("class").notNullable()
-    }
+    })
 }
