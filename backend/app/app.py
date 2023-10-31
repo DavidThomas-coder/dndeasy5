@@ -1,5 +1,3 @@
-# app.py
-
 # Import the Flask framework
 from flask import Flask
 
@@ -7,7 +5,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 # Create a Flask application
-app = Flask(__name)
+app = Flask(__name__)
 
 # Configure the SQLAlchemy database URI
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://davidthomas@localhost/dndeasy_development'
@@ -27,3 +25,4 @@ def hello_world():
 # Run the app if this script is executed directly
 if __name__ == '__main__':
     app.run(debug=True)
+
